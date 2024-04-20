@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LEKHNATH RESTAURANT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="shortcut icon" type="x-icon" a href="logo.png">
+   
+    
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:url(hotel.jpeg);
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.popuptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 20%;
+  margin-left: -85px;
+  color: #15ff00;
+  font-size: 2cap;
+  font-family: sans-serif;
+  background: transparent;
+ 
+}
+
+.popup .a{
+    color:aqua
+}
+
+
+.popuptext:after {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 5px;
+  border-width: 5px;
+  border-style: dotted;
+  
+  
+ 
+}
+
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  font-size: 2cap;
+  font-family: sans-serif;
+  
+  
+}
+
+  
+  
+
+.navbar{
+    width: 1500px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: px;
+    text-align: center;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+details.p{
+    color: red;
+}
+
+
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+
+
+
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: wheat;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color:#ff7200;
+    font-weight: bolder;
+}
+
+.content span{
+    color: #ff7200;
+    font-size: 65px
+}
+
+.form{
+    width: 400px;
+    height: 500px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,wheat);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 350px;
+    font-family: sans-serif;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-size: 22px;
+    background-color: #000000;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+    text-align: center;
+}
+
+.form input{
+    width: 180px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 3px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline:none;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+    text-align: center;
+}
+
+.btnn{
+    width: 390px;
+    height: 40px;
+    background: wheat;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff  #ff7200;;
+    transition: 0.4s ease;
+    text-align: center;
+    
+}
+.btnn:hover{
+    background: #ff7200;
+    color: black;
+    font-weight: bolder;
+   
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #00f7ff;
+}
+
+
+h6{
+    font-size: 4cap;
+    color: #ff7200;
+    text-align: center;
+}
+details > summary::-webkit-details-marker{
+display:none;
+}
+summary{
+    cursor: pointer;
+    display: block;
+}
+input[type=number]::-webkit-outer-spin-button,
+        input[type=number]::-webkit-inner-spin-button{
+            -webkit-appearance: none;
+        }
+        
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <div class="main">
+        <h6>LEKHNATH RESTAURANT</h6>
+        <div class="navbar">
+            
+
+            <div class="menu">
+                <ul>
+                <li><a href=""><details><summary>HOME</summary><p text="red">LOGIN FIRST</p></details></a></li>
+                <li><a href=""><details><summary>MENU</summary><p>LOGIN FIRST</p></details></a></li>
+                <li><a href=""><details><summary>CHEFS</summary><p>LOGIN FIRST</p></details></a></li>
+                <li><a href=""><details><summary>BRANCHES</summary><p>LOGIN FIRST</p></details></a></li>
+                <li><a href=""><details><summary>CONTACT</summary><p>LOGIN FIRST</p></details></a></li>
+                <li><a href=""><details><summary>TERMS</summary><p>LOGIN FIRST</p></details></a></li>
+                <li><a href=""><details><summary>ORDER</summary><p>LOGIN FIRST</p></details></a></li>
+                
+                
+                </ul>
+            </div>
+
+          
+        </div> 
+        <div class="content">
+            <h1 >LEKHNATH <br><span>RESTAURANT</span> <br>HOTEL</h1>
+            <p class="par">Lekhnath restaurant is a restaurant located in Lekhnath,Pokhara.we have<br> some amazing recipes
+                and the most talented chefs in the country.</p>
+                <button class="cn"><a href="index.html">JOIN US</a></button>
+
+                <div class="form">
+                    <h2 text >SIGN UP</h2><form id="mForm" method="POST">
+                        <input type="text" id="name" name="name"  placeholder="Name" size="50" required>
+                       
+                    
+                        <input type="text" id="gender" name="gender" placeholder="Gender" required>
+                      
+                
+
+                        <input type="text" id="address" name="address" placeholder="Address" required>
+                        <input type="text" id="district" name="district" placeholder="District" required>
+                
+                      
+                        <input type="text" id="province" name="province" placeholder="Province" required>
+                        
+                    
+                                    
+                   <input type="number" id="phone" name="phone" placeholder="Phone" required>
+                                    
+                                  
+                    <input type="email" name="email" placeholder=" Email" required>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+
+                    <button id="submit" class="btnn"><div class="popup" onclick="myFunction()" text size="2cap"> <B>SIGN UP</B>
+                        <span class="popuptext" id="myPopup"><B>SIGNED UP <br><a href="index.html">LOGIN NOW</a></B></span>
+                      </div></a></button>
+                                     </form>
+                                     <p class="link">Already Have Account?<br>
+                                        
+               <a href="index.html">LOGIN</a><br><br>
+                   FOLLOW US<br>facebook-<a href="https://www.facebook.com/royallekhnathcafe"><i class="fab fa-facebook"></i></a>
+                  whatsapp-<a href="https://www.whatsapp.com/download/"><i class="fab fa-whatsapp"></i></a> 
+                   youtube-<a href="https://www.youtube.com/@restaurantreviewsworldwide"><i class="fab fa-youtube"></i></a>
+                  twitter-<a href="https://twitter.com/SUBWAY"><i class="fab fa-twitter"></i></a></p>
+                    
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script>
+    function myFunction()
+ {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+       
+     
+        
+   
+
+document.getElementById('mForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Fetch the form data
+            var formData = new FormData(e.target);
+            const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzcm-ap4KNql5_e_L4Xcxfi0tecYzA7fBUsJXG0ha6mv3tJ7I2inTl-1y-RbYwmFwGl/exec"
+            // Send the data to the Google Apps Script
+           fetch(SCRIPT_URL,{
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.text())
+            .then(data => {
+
+
+                
+                console.log(data);
+                // Handle success or error
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    
+
+
+
+    </script>
+</body>
+</html>
